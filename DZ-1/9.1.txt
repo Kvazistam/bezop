@@ -1,0 +1,4 @@
+> FindMaxRoot := proc(a) local z, z_numeric; z := solve(a*(x^2 - 1) = sqrt(1 + x/a), x); return evalf[6](min(z)); end proc;
+> FindMaxRoot(2);
+                            -1.15139
+

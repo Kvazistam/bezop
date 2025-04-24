@@ -1,0 +1,125 @@
+> NULL;
+> restart;
+> with(NumberTheory);
+> printf(" ������� ����� ��� �������� p");
+> p := nextprime(parse(readline()));
+> a := rand(2 .. p - 1)();
+> while igcd(a, p - 1) <> 1 do
+>     a := rand(2 .. p - 1)();
+> end do;
+> alpha := 1/a mod phi(p);
+> b := rand(2 .. p - 1)();
+> while igcd(b, p - 1) <> 1 do
+>     b := rand(2 .. p - 1)();
+> end do;
+> beta := 1/b mod phi(p);
+> m := rand(2 .. p - 2)();
+> m1 := Power(m, a) mod p;
+> m2 := Power(m1, b) mod p;
+> m3 := Power(m2, alpha) mod p;
+> m4 := Power(m3, beta) mod p;
+> m, m1, m2, m3, m4;
+[AreCoprime, CalkinWilfSequence, CarmichaelLambda, 
+
+
+
+  ChineseRemainder, ContinuedFraction, 
+
+
+
+  ContinuedFractionPolynomial, CyclotomicPolynomial, Divisors, 
+
+
+
+  FactorNormEuclidean, HomogeneousDiophantine, ImaginaryUnit, 
+
+  
+
+  InhomogeneousDiophantine, IntegralBasis, InverseTotient, 
+
+
+
+  IsCyclotomicPolynomial, IsMersenne, IsSquareFree, IthFermat, 
+
+
+
+  IthMersenne, JacobiSymbol, JordanTotient, KroneckerSymbol, 
+
+
+
+  Landau, LargestNthPower, LegendreSymbol, M&ouml;bius, 
+
+
+
+  ModExtendedGCD, ModularLog, ModularRoot, ModularSquareRoot, 
+
+
+
+  Moebius, MultiplicativeOrder, Möbius, NearestLatticePoint, 
+
+
+
+  NextSafePrime, NumberOfIrreduciblePolynomials, 
+
+
+
+  NumberOfPrimeFactors, Omega, Phi, PrimeCounting, PrimeFactors, 
+
+
+
+  PrimitiveRoot, PseudoPrimitiveRoot, QuadraticResidue, Radical, 
+
+
+
+  RepeatingDecimal, RootsOfUnity, SimplestRational, 
+
+
+
+  SumOfDivisors, SumOfSquares, ThueSolve, Totient, lambda, mu, 
+
+
+
+  phi, pi, sigma, tau, varphi]
+
+
+
+
+ ������� ����� ��� �������� p
+                        p := 12876812651
+
+
+                         a := 581869304
+
+
+                        a := 12176269179
+
+
+                      alpha := 9860834519
+
+
+                        b := 4161255393
+
+
+                       beta := 5692371207
+
+
+                        m := 5244301283
+
+
+                        m1 := 2342206863
+
+
+                        m2 := 6636232061
+
+
+                        m3 := 6981416513
+
+
+                        m4 := 5244301283
+
+
+   5244301283, 2342206863, 6636232061, 6981416513, 5244301283
+
+
+;
+> NULL;
